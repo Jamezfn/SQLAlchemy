@@ -8,7 +8,6 @@ db_url = "sqlite:///database.db"
 
 engine = create_engine(db_url)
 
-Base.metadata.create_all(engine)
-
 Session = sessionmaker(bind=engine)
 
+Base.metadata.create_all(engine)
